@@ -72,3 +72,4 @@ To create a production-ready build for the Chrome Web Store:
 2. Navigate to the **Settings** tab to adjust reminder frequencies, preferred trajectories, and notification methods.
 3. Once an exercise begins, follow the moving ball with your eyes (without moving your head) to effectively massage and stretch eye muscles.
 
+![screenshot.png](screenshot.png)
