@@ -8,7 +8,7 @@ interface ExerciseBallProps {
 }
 
 export const ExerciseBall: React.FC<ExerciseBallProps> = ({ trajectory, duration }) => {
-  const animationDuration = duration / 2;
+  const animationDuration = 15;
 
 
   const getVariants = () => {
@@ -32,7 +32,7 @@ export const ExerciseBall: React.FC<ExerciseBallProps> = ({ trajectory, duration
           animate: {
             x: ['-48vw', '48vw'],
             y: ['48vh', '-48vh'],
-            transition: { duration: animationDuration / 8, repeat: Infinity, repeatType: "reverse" as any, ease: "linear" as any }
+            transition: { duration: animationDuration / 6, repeat: Infinity, repeatType: "reverse" as any, ease: "linear" as any }
           }
         };
       case 'diagonal2':
@@ -40,7 +40,7 @@ export const ExerciseBall: React.FC<ExerciseBallProps> = ({ trajectory, duration
           animate: {
             x: ['48vw', '-48vw'],
             y: ['48vh', '-48vh'],
-            transition: { duration: animationDuration / 8, repeat: Infinity, repeatType: "reverse" as any, ease: "linear" as any }
+            transition: { duration: animationDuration / 6, repeat: Infinity, repeatType: "reverse" as any, ease: "linear" as any }
           }
         };
       case 'square':
@@ -48,7 +48,7 @@ export const ExerciseBall: React.FC<ExerciseBallProps> = ({ trajectory, duration
           animate: {
             x: ['-45vw', '45vw', '45vw', '-45vw', '-45vw'],
             y: ['45vh', '45vh', '-45vh', '-45vh', '45vh'],
-            transition: { duration: animationDuration / 5, repeat: Infinity, ease: "linear" as any }
+            transition: { duration: animationDuration / 3, repeat: Infinity, ease: "linear" as any }
           }
         };
       case 'butterflyH':
@@ -56,7 +56,7 @@ export const ExerciseBall: React.FC<ExerciseBallProps> = ({ trajectory, duration
           animate: {
             x: Array.from({ length: 40 }, (_, i) => 48 * Math.sin((i / 39) * 2 * Math.PI) + 'vw'),
             y: Array.from({ length: 40 }, (_, i) => 25 * Math.sin((i / 39) * 4 * Math.PI) + 'vh'),
-            transition: { duration: animationDuration / 5, repeat: Infinity, ease: "linear" as any }
+            transition: { duration: animationDuration / 3, repeat: Infinity, ease: "linear" as any }
           }
         };
       case 'butterflyV':
@@ -64,7 +64,7 @@ export const ExerciseBall: React.FC<ExerciseBallProps> = ({ trajectory, duration
           animate: {
             x: Array.from({ length: 40 }, (_, i) => 25 * Math.sin((i / 39) * 4 * Math.PI) + 'vw'),
             y: Array.from({ length: 40 }, (_, i) => 48 * Math.sin((i / 39) * 2 * Math.PI) + 'vh'),
-            transition: { duration: animationDuration / 5, repeat: Infinity, ease: "linear" as any }
+            transition: { duration: animationDuration / 3, repeat: Infinity, ease: "linear" as any }
           }
         };
       case 'circleCW':
