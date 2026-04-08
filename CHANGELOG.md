@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2026-04-08
+
+### Fixed
+- **Push Notifications:** Resolved critical issue where native notifications were failing to show due to non-existent icon path entries.
+
+### Changed
+- **Asset Management:** Standardized all system notifications to use the core application assets (`/icon/128.png`).
+
+### Security
+- **Permission Mapping:** Removed redundant `scripting` and `activeTab` permissions to enhance user privacy and adhere to the principle of least privilege after the transition to the Side Panel architecture.
+
 ## [1.0.0] - 2026-04-05
 
 ### Added

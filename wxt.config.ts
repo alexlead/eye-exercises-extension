@@ -4,7 +4,7 @@ export default defineConfig({
   modules: ['@wxt-dev/module-react'],
   manifest: {
     name: 'Eye Exercises Tool',
-    permissions: ['sidePanel', 'storage', 'tabs', 'notifications', 'alarms', 'scripting', 'activeTab'],
+    permissions: ['sidePanel', 'storage', 'tabs', 'notifications', 'alarms'],
     action: {
       default_icon: {
         16: "icon/16.png",

@@ -44,7 +44,7 @@ export function ReminderSettings() {
   const previewPush = () => {
     browser.notifications.create({
       type: 'basic',
-      iconUrl: browser.runtime.getURL('/icon.png' as any),
+      iconUrl: browser.runtime.getURL('/icon/128.png'),
       title: 'Time for a Break!',
       message: 'Preview: Your eyes need a rest. Click to start exercises.',
       requireInteraction: false,

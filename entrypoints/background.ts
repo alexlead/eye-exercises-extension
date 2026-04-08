@@ -68,7 +68,7 @@ export default defineBackground(() => {
       if (usePush) {
         browser.notifications.create({
           type: 'basic',
-          iconUrl: browser.runtime.getURL('/icon-alert.png' as any),
+          iconUrl: browser.runtime.getURL('/icon/128.png'),
           title: 'Time for a Break!',
           message: 'Your eyes need a rest. Click the extension icon to start your exercises.',
           requireInteraction: false,
