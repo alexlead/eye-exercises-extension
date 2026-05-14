@@ -54,24 +54,26 @@ export const ExerciseBall: React.FC<ExerciseBallProps> = ({ trajectory, duration
       case 'butterflyH':
         return {
           animate: {
-            x: Array.from({ length: 40 }, (_, i) => 48 * Math.sin((i / 39) * 2 * Math.PI) + 'vw'),
-            y: Array.from({ length: 40 }, (_, i) => 25 * Math.sin((i / 39) * 4 * Math.PI) + 'vh'),
+            x: Array.from({ length: 40 }, (_, i) => i !== 39 ? 48 * Math.sin((i / 39) * 2 * Math.PI) + 'vw' : 48 * Math.sin((0 / 39) * 2 * Math.PI) + 'vw'),
+            y: Array.from({ length: 40 }, (_, i) => i !== 39 ? 25 * Math.sin((i / 39) * 4 * Math.PI) + 'vh' : 25 * Math.sin((0 / 39) * 4 * Math.PI) + 'vh'),
             transition: { duration: animationDuration / 3, repeat: Infinity, ease: "linear" as any }
           }
         };
       case 'butterflyV':
         return {
           animate: {
-            x: Array.from({ length: 40 }, (_, i) => 25 * Math.sin((i / 39) * 4 * Math.PI) + 'vw'),
-            y: Array.from({ length: 40 }, (_, i) => 48 * Math.sin((i / 39) * 2 * Math.PI) + 'vh'),
+            x: Array.from({ length: 40 }, (_, i) => i !== 39 ? 25 * Math.sin((i / 39) * 4 * Math.PI) + 'vw' : 25 * Math.sin((0 / 39) * 4 * Math.PI) + 'vw'),
+            y: Array.from({ length: 40 }, (_, i) => i !== 39 ? 48 * Math.sin((i / 39) * 2 * Math.PI) + 'vh' : 48 * Math.sin((0 / 39) * 2 * Math.PI) + 'vh'),
             transition: { duration: animationDuration / 3, repeat: Infinity, ease: "linear" as any }
           }
         };
       case 'circleCW':
+
+
         return {
           animate: {
-            x: Array.from({ length: 40 }, (_, i) => 45 * Math.cos((i / 39) * 2 * Math.PI) + 'vw'),
-            y: Array.from({ length: 40 }, (_, i) => 45 * Math.sin((i / 39) * 2 * Math.PI) + 'vh'),
+            x: Array.from({ length: 40 }, (_, i) => i !== 39 ? 45 * Math.cos((i / 39) * 2 * Math.PI) + 'vw' : 45 * Math.cos((0 / 39) * 2 * Math.PI) + 'vw'),
+            y: Array.from({ length: 40 }, (_, i) => i !== 39 ? 45 * Math.sin((i / 39) * 2 * Math.PI) + 'vh' : 45 * Math.sin((0 / 39) * 2 * Math.PI) + 'vh'),
             transition: { duration: animationDuration / 3, repeat: Infinity, ease: "linear" as any }
           }
         };
