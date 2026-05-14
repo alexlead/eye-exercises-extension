@@ -2,7 +2,7 @@
   "name": "wxt-react-starter",
   "description": "Powerful extension for guided eye exercises to reduce eye strain and improve vision health.",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "scripts": {
     "dev": "wxt",
